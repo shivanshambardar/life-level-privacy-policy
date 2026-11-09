@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>LIFE LEVEL | Privacy Protocol</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --red: #ff3030;
+    --bg: #08090c;
+    --card: #111319;
+    --text: #f4f4f5;
+    --muted: #999da8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background:
+    radial-gradient(circle at 10% 10%, #ff303015, transparent 35%),
+    radial-gradient(circle at 90% 70%, #ff303010, transparent 35%);
+    z-index: -1;
+}
+
+.container {
+    max-width: 950px;
+    margin: auto;
+    padding: 30px 20px 70px;
+}
+
+header {
+    padding: 55px 25px;
+    text-align: center;
+    border: 1px solid #ff303050;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #191a20, #0b0c10);
+    box-shadow: 0 0 40px #ff303012;
+    margin-bottom: 35px;
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(35px, 8vw, 65px);
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+
+.logo span {
+    color: var(--red);
+}
+
+.tagline {
+    color: var(--muted);
+    letter-spacing: 4px;
+    font-size: 11px;
+    margin-top: 12px;
+}
+
+.status {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 7px 15px;
+    border: 1px solid #ff303080;
+    border-radius: 30px;
+    color: #ff5555;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.intro {
+    color: var(--muted);
+    margin: 25px 0;
+    font-size: 15px;
+}
+
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 17px;
+    margin-bottom: 13px;
+    color: white;
+}
+
+h2 span {
+    color: var(--red);
+    margin-right: 10px;
+}
+
+.card {
+    background: linear-gradient(145deg, #15171e, #0e1015);
+    border: 1px solid #ffffff12;
+    border-left: 3px solid var(--red);
+    border-radius: 12px;
+    padding: 25px;
+    margin: 18px 0;
+    transition: .25s ease;
+}
+
+.card:hover {
+    border-color: #ff303070;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px #ff303010;
+}
+
+p, li {
+    color: #b8bbc4;
+    font-size: 14px;
+}
+
+ul {
+    padding-left: 22px;
+    margin-top: 12px;
+}
+
+li {
+    margin: 7px 0;
+}
+
+.highlight {
+    color: #ff5555;
+    font-weight: 700;
+}
+
+.contact {
+    text-align: center;
+    padding: 30px;
+    margin-top: 30px;
+    background: #171116;
+    border: 1px solid #ff303060;
+    border-radius: 15px;
+}
+
+.contact a {
+    display: inline-block;
+    color: white;
+    background: #e52323;
+    padding: 12px 25px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 800;
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+    color: #777;
+    font-size: 11px;
+    margin-top: 45px;
+    letter-spacing: 2px;
+}
+
+@media(max-width:600px) {
+    .container {
+        padding: 15px 12px 45px;
+    }
+
+    header {
+        padding: 40px 15px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+    <div class="logo">LIFE <span>LEVEL</span></div>
+    <div class="tagline">YOUR LIFE. YOUR DATA. YOUR CONTROL.</div>
+    <div class="status">● PRIVACY PROTECTED</div>
+</header>
+
+<p class="intro">
+    <strong>PRIVACY POLICY / 2026</strong><br><br>
+    Your personal information deserves protection.
+    LIFE LEVEL is designed around local data storage and
+    user privacy. This policy explains how information
+    is handled when you use our application.
+</p>
+
+<div class="card">
+<h2><span>01</span> INFORMATION COLLECTION</h2>
+<p>
+LIFE LEVEL does not require account registration or
+Google sign-in. The app does not transmit your personal
+application records to the developer's servers.
+</p>
+</div>
+
+<div class="card">
+<h2><span>02</span> LOCAL DATA STORAGE</h2>
+<p>The application may store the following information locally:</p>
+<ul>
+<li>Gym and workout records</li>
+<li>Study tasks and achievements</li>
+<li>Daily schedules and routines</li>
+<li>Nutrition and water records</li>
+<li>Personal photos and notes</li>
+<li>Profile name and profile picture</li>
+<li>Experience points and level progress</li>
+</ul>
+<p style="margin-top:12px">
+This information is stored within the application's
+local storage on your device.
+</p>
+</div>
+
+<div class="card">
+<h2><span>03</span> NO THIRD-PARTY DATA SHARING</h2>
+<p>
+LIFE LEVEL does not sell, rent, or share your personal
+application information with third parties. The developer
+does not have access to your locally stored app records
+through the application.
+</p>
+</div>
+
+<div class="card">
+<h2><span>04</span> OFFLINE & CLOUD STORAGE</h2>
+<p>
+LIFE LEVEL does not provide cloud synchronization,
+online accounts, or cloud backup. Your application
+records are intended to remain on your device.
+</p>
+</div>
+
+<div class="card">
+<h2><span>05</span> ADS & TRACKING</h2>
+<p>
+LIFE LEVEL does not display advertisements or use
+third-party advertising or analytics services.
+</p>
+</div>
+
+<div class="card">
+<h2><span>06</span> PHOTOS & MEDIA</h2>
+<p>
+When you select a photo for your profile or Photo Journal,
+the application accesses your selected image and stores
+a copy in its local application storage. These photos
+are not uploaded to developer servers.
+</p>
+</div>
+
+<div class="card">
+<h2><span>07</span> DATA DELETION</h2>
+<p>
+You can delete supported records through the application's
+available controls. Uninstalling the application generally
+removes its local application data. Device-level backups,
+if enabled, are controlled by your device settings.
+</p>
+</div>
+
+<div class="card">
+<h2><span>08</span> CHILDREN'S PRIVACY</h2>
+<p>
+LIFE LEVEL does not knowingly collect children's personal
+information through online services.
+</p>
+</div>
+
+<div class="card">
+<h2><span>09</span> POLICY UPDATES</h2>
+<p>
+This policy may be updated when application features
+or privacy practices change. The latest version will
+be published on this page.
+</p>
+</div>
+
+<div class="contact">
+<h2>NEED SUPPORT?</h2>
+<p>For questions about privacy or the application:</p>
+<a href="mailto:shivanshambardar1@gmail.com">
+CONTACT DEVELOPER
+</a>
+</div>
+
+<footer>
+© 2026 LIFE LEVEL<br>
+BUILT FOR PROGRESS. DESIGNED FOR PRIVACY.
+</footer>
+
+</div>
+</body>
+</html>
